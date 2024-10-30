@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML VIDEO</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4/dist/fancybox.css">
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4/dist/fancybox.umd.js"></script>
+</head>
+<body>
+
+    <a data-fancybox href="#video-popup">Open Video</a>
+
+    <div style="display: none;">
+        <video controls autoplay id="video-popup" width="100%">
+            <source src="https://856772.fs1.hubspotusercontent-na1.net/hubfs/856772/Indi%20final%20(1).mp4" type="video/mp4">
+            <track src="https://856772.fs1.hubspotusercontent-na1.net/hubfs/856772/subtitle/revised_subtitles.vtt" kind="subtitles" srclang="en" label="English" default>
+        </video>
+    </div>
+
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            // Optional customization
+            Toolbar: false,
+            Thumbs: false,
+        })
+    </script>
+</body>
+</html>
